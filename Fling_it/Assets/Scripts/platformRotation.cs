@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class platformMovement : MonoBehaviour
+public class platformRotation : MonoBehaviour
 {
 
     private Touch touch;
-    //private float rotateSpeed = 10;
-    private Quaternion startRotation = new(0f,0f,0f,0f);
+    private Quaternion startrot;
+
+    private void Start()
+    {
+        startrot = transform.rotation;
+    }
 
 
     // Update is called once per frame
@@ -23,7 +27,7 @@ public class platformMovement : MonoBehaviour
             }
         } else
         {
-            transform.rotation = startRotation;
+            transform.rotation = Quaternion.Lerp(transform.rotation, startrot, Time.deltaTime * 10f);
         }
     }
 }
