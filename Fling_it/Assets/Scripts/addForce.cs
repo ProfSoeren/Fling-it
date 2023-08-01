@@ -16,24 +16,5 @@ public class addForce : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(rb.velocityX > 0 && rb.velocityX < 5)
-        {
-            rb.velocityX += addSpeedX;
-            rb.rotation -= rotation;
-        } else if(rb.velocityX < 0 && rb.velocityX > -5)
-        {
-            rb.velocityX -= addSpeedX;
-        }
-
-        if (rb.velocityY > 0 && transform.position.y < -2)
-        {
-            rb.velocityY += addSpeedY;
-        }
-
-        
-    }
 
 }
