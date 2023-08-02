@@ -8,6 +8,8 @@ public class platformRotation : MonoBehaviour
     private Touch touch;
     private Quaternion startrot;
 
+    public float sensitivity;
+
     private void Start()
     {
         startrot = transform.rotation;
@@ -23,7 +25,7 @@ public class platformRotation : MonoBehaviour
 
             if(touch.phase == TouchPhase.Moved)
             {
-                transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + touch.deltaPosition.y * 0.0005f, transform.rotation.w);
+                transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + touch.deltaPosition.y * sensitivity * 0.0001f, transform.rotation.w);
             }
         } else
         {

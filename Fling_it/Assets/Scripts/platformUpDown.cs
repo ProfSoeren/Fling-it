@@ -7,6 +7,8 @@ public class platformUpDown : MonoBehaviour
     private Touch touch;
     private Vector3 startpos;
 
+    public platformRotation platformRotation;
+
     private void Start()
     {
         startpos = transform.position;
@@ -20,7 +22,7 @@ public class platformUpDown : MonoBehaviour
 
             if (touch.phase == TouchPhase.Moved)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y + touch.deltaPosition.y * 0.005f, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y + touch.deltaPosition.y * platformRotation.sensitivity * 0.001f, transform.position.z);
             }
         }
         else
