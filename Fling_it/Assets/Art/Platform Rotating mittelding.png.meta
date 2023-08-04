@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Platform Rotating mittelding_0: 4070456208428085467
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

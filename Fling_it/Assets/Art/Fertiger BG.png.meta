@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fertiger BG_0: -2074428916801087408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

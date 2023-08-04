@@ -16,7 +16,8 @@ public class platformUpDown : MonoBehaviour
 
     void Update()
     {
-        if (Input.touchCount > 0)
+        Debug.Log(platformRotation.sensitivity);
+        if (Input.touchCount > 0 && PauseMenu.GameIsPaused == false)
         {
             touch = Input.GetTouch(0);
 

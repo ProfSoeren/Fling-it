@@ -8,7 +8,7 @@ public class platformRotation : MonoBehaviour
     private Touch touch;
     private Quaternion startrot;
 
-    public float sensitivity;
+    public float sensitivity = 5f;
 
     private void Start()
     {
@@ -19,7 +19,8 @@ public class platformRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if(Input.touchCount > 0)
+        Debug.Log(sensitivity);
+      if(Input.touchCount > 0 && PauseMenu.GameIsPaused == false)
         {
             touch = Input.GetTouch(0);
 

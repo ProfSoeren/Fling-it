@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b1f7b73ffb168a84d9fb656b47b21c4c
+guid: ce1559eaa32fa0447b4a737a85061723
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4525725390105462398
-    second: Platform Up Down mittelding_0
+      213: 3338281385054063857
+    second: Button Pause_0
+  - first:
+      213: 9220529754025271715
+    second: Button Pause_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Platform Up Down mittelding_0
+      name: Button Pause_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 82
-        height: 67
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e76c334934b9ece30800000000000000
-      internalID: 4525725390105462398
+      spriteID: 1fc42749b35f35e20800000000000000
+      internalID: 3338281385054063857
       vertices: []
       indices: 
       edges: []
@@ -133,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18480402658fd6540b8fb0bf6ceae3b7
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Platform Up Down mittelding_0: 4525725390105462398
+      Button Pause_0: 3338281385054063857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
