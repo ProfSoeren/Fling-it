@@ -19,7 +19,6 @@ public class platformRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(sensitivity);
       if(Input.touchCount > 0 && PauseMenu.GameIsPaused == false)
         {
             touch = Input.GetTouch(0);

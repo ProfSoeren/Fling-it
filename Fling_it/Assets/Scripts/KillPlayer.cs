@@ -6,14 +6,22 @@ using UnityEngine.SceneManagement;
 public class KillPlayer : MonoBehaviour
 {
 
-    public int respawn;
-    public Transform respawnMenu;
+    public GameObject respawnMenu;
+    public GameObject deadMenu;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Instantiate(respawnMenu, transform.position, Quaternion.identity);
+            GameObject respawnMenuClone = (GameObject)Instantiate(respawnMenu, transform.position, Quaternion.identity);
+            Destroy(respawnMenuClone, 3);
+            StartCoroutine(DeadMenu());
         }
+    }
+
+    IEnumerator DeadMenu()
+    {
+        yield return new WaitForSeconds(3);
+        deadMenu.SetActive(true);
     }
 }

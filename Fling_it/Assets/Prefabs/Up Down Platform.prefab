@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9221838620148972321}
   - component: {fileID: 2739118173494939946}
   - component: {fileID: 1388191392079476125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Up Down Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5118601144079636372}
   - component: {fileID: 3715127612045604769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform Up Down mittelding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
