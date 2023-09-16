@@ -10,17 +10,19 @@ public class mainMenu : MonoBehaviour
     public float transitionTime = 1f;
     public void PlayGame()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        }
-        else
-        {
-            StartCoroutine(LoadLevel(0));
-        }
-
-        
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));  
     }
+
+    public void RestartGame()
+    {
+        StartCoroutine(LoadLevel(1));
+    }
+
+    public void Menu()
+    {
+        StartCoroutine(LoadLevel(0));
+    }
+
 
     IEnumerator LoadLevel(int LevelIndex)
     {

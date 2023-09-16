@@ -19,7 +19,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-       // Vibrator.Vibrate();
+        // Vibrator.Vibrate();
+        airTime.SetActive(false);
     }
 
     public bool IsGrounded()
@@ -58,12 +59,13 @@ public class Player : MonoBehaviour
             airTimeScript.currentTime = airTimeScript.currentTime + Time.deltaTime;
             airTimeScript.timerText.text = airTimeScript.currentTime.ToString("0.00");
         }
+
     }
 
     IEnumerator AirTime()
     {
         yield return new WaitForSeconds(2);
-        if(IsGrounded() == false)
+        if(IsGrounded() == false && airTimeScript.currentTime >= 2)
         {
             airTime.SetActive(true);
         }   
